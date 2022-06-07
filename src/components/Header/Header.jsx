@@ -19,9 +19,11 @@ document.addEventListener("click", e => {
     const index = allAnchors.indexOf(anchor)
     indicator.style.setProperty("--position", index)
     document.querySelectorAll("a").forEach(elem => {
-      elem.classNameList.remove("active")
+      elem.classList.remove("active")
     })
-    anchor.classNameList.add("active")
+    anchor.classList.add("active");
+          console.log("remove");
+
   }
 })
   return (
